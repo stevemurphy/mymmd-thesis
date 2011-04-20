@@ -1,0 +1,29 @@
+%
+% After metadata set, continue setup for document and input preamble
+%
+
+% Special cases for titlePW title page
+\newcommand\mycovertitle{\uppercase{My title \\ across lines:\\ with an interesting \\ and catchy subtitle} % \\[10pt] %
+%\large\uppercase{My Name} \\[10pt] %
+%\normalsize\uppercase{Paper \\[20pt] S\lowercase{upervisor:}\\ Big Cheese %
+} % Multi-line title. uppercase has to be here
+
+\newcommand\mycoverauthor{\myauthor \\ \small{Student~No.~1234 \\[10pt] tel:\\ 212~555~1212 \\ email:\\ \urlstyle{same}\url{student@example.com}}}
+
+\newcommand\myfaculty{Faculty of Dark Arts\\
+    University of Magic}
+
+
+\PassOptionsToPackage{final}{hyperref} % Gives hyperlinks even in draft mode (draft needed for todos)
+%\PassOptionsToPackage{final,\hyperoptions hyperfootnotes=false,linktoc=all,pagebackref}{hyperref}
+
+
+% Note -- includes subdirectory/files needed for a number of inputs
+% Copy from other projects or download latest from https://github.com/stevemurphy/thesispreamble
+
+\input{includes/preamble}
+
+\input{includes/setupFixme} % todos etc -- or use setupTodo, setupTodonotes
+
+
+% Next, begin doc
